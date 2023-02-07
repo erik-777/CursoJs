@@ -19,8 +19,19 @@
 function Animal(nombre, genero) {
   this.nombre = nombre;
   this.genero = genero;
-  this.sonar = function () {
-    console.log("guau guau");
-  };
+  // this.sonar = function () {
+  //   console.log("guau guau");
+  // };
 }
-console.log(Animal)
+Animal.prototype.sonar = function () {
+  console.log("guau guau");
+};
+
+//console.log(Animal)
+
+const venus = new Animal("Venus", "hembra");
+console.log(venus);
+console.log;
+venus.sonar();
+
+// metodos agregados al prototipo de la funcion constructora
