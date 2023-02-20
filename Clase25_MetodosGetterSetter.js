@@ -34,10 +34,10 @@ class Perro extends Animal {
    * @param {*} genero
    * @param {*} tamanio
    */
-  constructor(nombre, genero, tamanio) {
+  constructor(nombre, genero, tamanio, raza) {
     super(nombre, genero);
     this.tamanio = tamanio;
-    this.raza = null;
+    this.raza = raza;
   }
   /**
    * Definicion de metodos
@@ -51,13 +51,13 @@ class Perro extends Animal {
   /**
    * Definicion de un metodo get
    */
-  get getRaza() {
+  static get getRaza() {
     return this.raza;
   }
   /**
    * Definicion de un metodo Set
    */
-  set setRaza(raza) {
+  static set setRaza(raza) {
     this.raza = raza;
   }
 }
