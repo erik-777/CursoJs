@@ -8,9 +8,11 @@ Install Home-brew
 # Git
 
 * inicializar el repositorio
-`git init`
+
+        git init
 * Agregar el archivo al repositorio
-`git add nombre_de_archivo.extencion`
+
+        git add nombre_de_archivo.extencion
 
 $ git commit -m “Mensaje”// Agregamos 
 
@@ -43,12 +45,12 @@ $ git config --list --show-origin//rutas de acceso a la
 configuración de git
 $ git log archivo.extencion //muestra la historia del archivo
 
-Conexión con Repositorio remoto
+* Conexión con Repositorio remoto
 
-$Git remote add origin “url”
+<code>$Git remote add origin “url”</code>
 
-Eliminar Repo Remoto
-$git remote rm referencia
+* Eliminar Repo Remoto
+> <code>git remote rm referencia</code>
 
 Ver Referencias Remotas
 $git remote -v
@@ -102,14 +104,19 @@ git push origin :refs/tags/v0.1
 ## Terminal
 
 * Conectar al modo root
-	sudo su
+
+        sudo su
 * Apagar un equipo
-	 sudo shutdown -h 0
+
+        sudo shutdown -h 0
 
 * Listar particiones de Disco
-	sudo disk -l
+
+        sudo disk -l
+
 * Cambiar permisos de un directorio
-	sudo chmod 777 
+
+        sudo chmod 777 
 
 
 sudo su - administrador
@@ -118,10 +125,13 @@ psql
 \q
 
 
-Directorios
-Copiar archivos de la maquina local a servidores
-Comando + ruta del archivo + usuario@Ip: ruta destino
-scp logoidtolu.png  evergara@10.0.100.222:/home/evergara/imagenes
+### Directorios
+
+* Copiar archivos de la maquina local a remotos
+
+<p>Comando + ruta del archivo + usuario@Ip: ruta destino</p>
+
+<code>scp logoidtolu.png  username@ipaddress:/home/evergara/imagenes</code>
 
 Remover Directorios
 	Sudo rm -r nombre_Directorio
@@ -246,4 +256,11 @@ bin/kafka-delete-records.sh --bootstrap-server 127.0.0.1:9092 --offset-json-file
 ** delete consumer groups by group and topic **
 bin/kafka-consumer-groups.sh --delete-offsets --group name-group --topic rust  --bootstrap-server 127.0.0.1:9092
 
+| title |  comando|
+| :----:      | :----:   |
+|
 
+| Syntax      | Description | Test Text     |
+| :----:      | :----:   |:----: |
+| Header      | Title       | Here's this   |
+| Paragraph   | Text        | And more      |
