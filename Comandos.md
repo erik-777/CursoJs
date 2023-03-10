@@ -264,3 +264,9 @@ bin/kafka-consumer-groups.sh --delete-offsets --group name-group --topic rust  -
 | :----:      | :----:   |:----: |
 | Header      | Title       | Here's this   |
 | Paragraph   | Text        | And more      |
+
+# ScrcPy
+
+* Conexion remota
+
+		scrcpy --tcpip=192.168.10.81
